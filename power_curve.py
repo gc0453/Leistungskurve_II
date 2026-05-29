@@ -5,7 +5,7 @@ def power_curve(data):
     power_curve = []
     power_curve = data["PowerOriginal"]
 
-    zeit = [1, 3, 6, 10, 30, 60, 100, 300, 600, 1000, 3000, 6000]
+    zeit = [1, 2, 3, 4, 6, 10, 15, 30, 45, 60, 75, 90, 120, 180, 240, 300, 360, 720, 900, 1080, 1260, 1440, 1620, 1800]
     #i = len(zeit)
     print(data["PowerOriginal"].dtype)
 
@@ -20,7 +20,7 @@ def power_curve(data):
 
             if avg_power > max_power:
                 max_power = avg_power
-        power_result.append(max_power)
+        power_result.append(float(max_power))
 
 
 
