@@ -14,7 +14,7 @@ Das Programm soll sowohl Daten verarbeiten können welche als Serien oder Arrays
 Bevor das Programm verwendet werden kann, muss das Repository auf Ihr Gerät geklont ( Befehl: git clone https://github.com/gc0453/Leistungskurve_II.git) und mit PDM installiert werden ( Befehl: pdm install ). Das Programm kann anschließend mit dem folgenden Befehl ausgeführt werden: pdm run streamlit run main.py 
 
 # Programmbeschreibung:
-
+![Bild_1](screenshot/leistungskurve.png)
 
 # Screenshot Plot Power Curve
 
