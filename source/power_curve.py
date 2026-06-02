@@ -4,7 +4,7 @@ def power_curve_pd(data):
     power_curve = []
     power_curve = data["PowerOriginal"]
 
-    zeit = [1, 2, 3, 4, 6, 10, 15, 30, 45, 60, 120, 180, 300, 360, 600, 900, 1080, 1260, 1440, 1620, 1800]
+    zeit = [1, 2, 3, 5, 6, 8, 10, 30, 60, 120, 300, 600, 1200, 1440, 1620, 1800]
 
     i = 0
     power_result = []
