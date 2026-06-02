@@ -25,7 +25,7 @@ def power_curve_pd(data):
         "Leistung_W": power_result
     })
 
-    return print(result_table)
+    return result_table
 """
 def power_curve_np(data, power_col=0):
 
