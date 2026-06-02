@@ -1,15 +1,10 @@
 from source.power_curve import power_curve_pd
-from source.power_curve import power_curve_np
-from source.pandas_df import df_csv
+#from source.power_curve import power_curve_np
+from source.pandas_df import read_csv_pd, clean_pd
 import numpy as np
 import pandas as pd
 
-data = df_csv()
-if isinstance(data, np.ndarray):
-    power_curve_np(data)
+data = read_csv_pd()
+data_clean = clean_pd(data)
+print(power_curve_pd(data_clean))
 
-elif isinstance(data, pd.DataFrame):
-    power_curve_pd(data)
-
-else:
-    print("Daten konnten nicht verarbeitet werden")
