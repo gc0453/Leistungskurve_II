@@ -14,6 +14,8 @@ Bevor das Programm verwendet werden kann, muss das Repository auf Ihr Gerät gek
 
 # Programmbeschreibung:
 
+Das gesamte Programm ist in drei Unterprogramme und in ein Hauptprogramm unterteilt <br>
+<br>
 read_clean_df.py -> Liest die Daten ein und entfernt alle None-Werte bei der Leistung <br>
 power_curve.py -> Erstellt die Werte fuer die Leistungskurve <br>
 make_plot.py -> Erstellt den Plot und die Grafik im Screenshot-Ordner <br>
