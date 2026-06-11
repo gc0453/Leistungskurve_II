@@ -9,6 +9,8 @@ def plot_line_power(data):
     # Zeit umrechnen
     x_pos = range(len(x_raw))
     x_labels = []
+
+    #Zeiten ueber 60s in min angeben
     for t in x_raw:
 
         if t < 60:
@@ -27,6 +29,7 @@ def plot_line_power(data):
     plt.xscale("linear")
     plt.xticks(x_pos, x_labels, rotation=45)
     plt.grid(True)
+
     # Unterordner erstellen
     output_dir = "screenshot"
     os.makedirs(output_dir, exist_ok=True)

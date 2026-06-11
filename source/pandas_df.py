@@ -7,17 +7,6 @@ def read_csv_pd():
     df = pd.read_csv(directory + file_name_csv, sep=',',header=0) #Datenframe erstellen
     return df #Die "gereinigten" Daten werden zurückgegeben
 
-def read_csv_np():
-    directory = "data/" #Speicherort
-    file_name_csv = "activity.csv" #Dateiname der csv-Datei
-    arr = np.loadtxt(directory + file_name_csv, delimiter=",")
-    arr_clean = arr[~np.isnan(arr)]
-    return arr_clean
-
 def clean_pd(data):
     pd_clean = data.dropna(subset=["PowerOriginal"]) #Alle None aus PowerOriginal entfernen
     return pd_clean
-
-def clean_np(data):
-    np_clean = data[~np.isnan(data["PowerOriginal"])]
-    return np_clean
