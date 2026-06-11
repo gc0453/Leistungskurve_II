@@ -1,5 +1,5 @@
 from source.power_curve import power_curve_pd
-from source.pandas_df import read_csv_pd, clean_pd
+from source.read_clean_df import read_csv_pd, clean_pd
 from source.make_plot import plot_line_power
 
 def main():
